@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6e6e6;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+aside {
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f1f1f1!important;
+    padding: 15px;
+    transition: width 0.4s ease-in;
+    -webkit-transition: width 0.4s ease-in;
+    -ms-transition: width 0.4s ease-in;
+    -o-transition: width 0.4s ease-in;
+    /* box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%); */
+}
+
+aside.active {
+    width: 50px;
+    padding: 15px 5px;
+}
+
+aside.active .logo {
+    width: 30px;
+    height: 30px;
+}
+
+aside.active .menu a {
+    padding: 0 0 0 10px;
+    width: 25px;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 20px;
+}
+
+.rightNavigationPage {
+    width: calc(100% - 250px);
+    transition: width 0.4s ease-in;
+    -webkit-transition: width 0.4s ease-in;
+    -ms-transition: width 0.4s ease-in;
+    -o-transition: width 0.4s ease-in;
+    position: relative;
+}
+
+.rightNavigationPage.active {
+    width: calc(100% - 50px);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.centerTile {
+    width: 100%;
+    padding: 15px;
+    height: 92vh;
+}
